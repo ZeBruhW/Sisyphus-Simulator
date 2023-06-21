@@ -12,6 +12,6 @@ for (var i = 0; i < array_length(current_key_demands); i += 1)
 	{
 	if current_key_demands[i] != 0
 		{
-		draw_text(0, 70 + (i * 10), string(debug_current_key_demands[i]));
+		draw_text(0, 70 + (i * 10), chr(current_key_demands[i]));
 		}
 	}
