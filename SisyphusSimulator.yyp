@@ -34,11 +34,18 @@
     "IDEVersion": "2023.4.0.84",
   },
   "resources": [
+    {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},},
+    {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},},
+    {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
+    {"id":{"name":"obj_hilltop","path":"objects/obj_hilltop/obj_hilltop.yy",},},
+    {"id":{"name":"spr_hilltop","path":"sprites/spr_hilltop/spr_hilltop.yy",},},
     {"id":{"name":"TestSprite","path":"sprites/TestSprite/TestSprite.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_hill","path":"objects/obj_hill/obj_hill.yy",},},
+    {"id":{"name":"spr_hill","path":"sprites/spr_hill/spr_hill.yy",},},
+    {"id":{"name":"TheHill","path":"rooms/TheHill/TheHill.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"TheHill","path":"rooms/TheHill/TheHill.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},

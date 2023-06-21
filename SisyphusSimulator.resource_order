@@ -16,5 +16,12 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"spr_rock","order":2,"path":"sprites/spr_rock/spr_rock.yy",},
+    {"name":"obj_rock","order":1,"path":"objects/obj_rock/obj_rock.yy",},
+    {"name":"obj_control","order":3,"path":"objects/obj_control/obj_control.yy",},
+    {"name":"obj_hilltop","order":2,"path":"objects/obj_hilltop/obj_hilltop.yy",},
+    {"name":"spr_hilltop","order":3,"path":"sprites/spr_hilltop/spr_hilltop.yy",},
+    {"name":"spr_hill","order":1,"path":"sprites/spr_hill/spr_hill.yy",},
+  ],
 }
