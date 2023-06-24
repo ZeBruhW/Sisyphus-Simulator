@@ -1,3 +1,7 @@
+// Set font for debugger
+
+draw_set_font(fnt_debugger)
+
 //This is going to be debug text display stuff. Delete this later.
 draw_text(0, 0, "player_correct: " + string(player_correct));
 draw_text(0, 10, "in_play: "+ string(in_play));
@@ -16,3 +20,5 @@ for (var i = 0; i < array_length(current_key_demands); i += 1)
 		draw_text(512, 75 + (i * 15), "Push " + string(current_key_demands[i]));
 		}
 	}
+
+
