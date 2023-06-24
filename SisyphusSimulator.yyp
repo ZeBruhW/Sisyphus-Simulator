@@ -36,12 +36,14 @@
   "resources": [
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},},
     {"id":{"name":"obj_rock","path":"objects/obj_rock/obj_rock.yy",},},
-    {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
+    {"id":{"name":"spr_hillbottom","path":"sprites/spr_hillbottom/spr_hillbottom.yy",},},
+    {"id":{"name":"obj_keycontrol","path":"objects/obj_keycontrol/obj_keycontrol.yy",},},
     {"id":{"name":"obj_hilltop","path":"objects/obj_hilltop/obj_hilltop.yy",},},
     {"id":{"name":"spr_hilltop","path":"sprites/spr_hilltop/spr_hilltop.yy",},},
     {"id":{"name":"TestSprite","path":"sprites/TestSprite/TestSprite.yy",},},
     {"id":{"name":"obj_hill","path":"objects/obj_hill/obj_hill.yy",},},
     {"id":{"name":"spr_hill","path":"sprites/spr_hill/spr_hill.yy",},},
+    {"id":{"name":"obj_hillbottom","path":"objects/obj_hillbottom/obj_hillbottom.yy",},},
     {"id":{"name":"TheHill","path":"rooms/TheHill/TheHill.yy",},},
   ],
   "RoomOrderNodes": [

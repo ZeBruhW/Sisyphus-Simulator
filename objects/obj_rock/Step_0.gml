@@ -1,8 +1,8 @@
 //Alright baby let's fucking roll
 
-if obj_control.in_play
+if obj_keycontrol.in_play
 	{
-	if obj_control.player_correct
+	if obj_keycontrol.player_correct
 		{
 		is_rolling = true;
 		is_falling = false;
