@@ -11,13 +11,17 @@ draw_text(0, 60, "Difficulty level: " + string(difficulty_level));
 
 //Tell the player what button to push
 
-draw_text(512, 60, "Push D");
+draw_set_font(fnt_menu);
+var window_width = window_get_width();
+var window_height = window_get_height();
+
+draw_text(window_width / 2, 50, "Push D");
 
 for (var i = 0; i < array_length(current_key_demands); i += 1)
 	{
 	if current_key_demands[i] != 0
 		{
-		draw_text(512, 75 + (i * 15), "Push " + string(current_key_demands[i]));
+		draw_text(window_width / 2, 80 + (i * 30), "Push " + string(current_key_demands[i]));
 		}
 	}
 

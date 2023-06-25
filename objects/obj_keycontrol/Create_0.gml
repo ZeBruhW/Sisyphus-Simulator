@@ -1,4 +1,6 @@
 //Setting control objects.
+randomize();
+gpu_set_texfilter(false);
 
 player_correct = 1; //Just checking if the player is holding down the correct keys.
 
@@ -18,7 +20,7 @@ current_key_demands = [0, 0, 0, 0, 0];
 keyset[0] = ["W", "A", "S"]; //WASD
 keyset[1] = ["Q", "W", "E", "R", "A", "S", "F", "Z", "X", "C", "1", "2", "3", "4"];
 keyset[2] = ["Q", "W", "E", "R", "T", "A", "S", "F", "G", "Z", "X", "C", "V", "1", "2", "3", "4", "5", "6"];
-keyset[3] = ["Y", "U", "I", "O", "P", "H", "J", "K", "L", "B", "N", "M", "[", "]", ";", "\'", ",", ".", "/", "7", "8", "9", "0"];
+keyset[3] = ["Y", "U", "I", "O", "P", "H", "J", "K", "L", "B", "N", "M", "[", "]", ";", ",", ".", "/", "7", "8", "9", "0"];
 
 //Between sets 3 and 4, we have every legal key, so instead of a keyset 5, we're just going to use those two combined.
 //Yeah this shit's lazy. Fight me. I'm the programmer, here, you're not my dad.
