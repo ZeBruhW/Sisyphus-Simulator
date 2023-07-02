@@ -5,6 +5,3 @@ depth = (y * -1);
 
 rollspeed = .0625;
 fallspeed = -5;
-
-is_rolling = 1;
-is_falling = 0;

@@ -2,14 +2,29 @@
 randomize();
 gpu_set_texfilter(false);
 
-player_correct = 1; //Just checking if the player is holding down the correct keys.
+gamestate = 0; //This will track the overarching current state of the game.
+//0 is before starting play.
+//1 is during the main gameplay loop.
+//2 is after you fail, when the camera pans over to the hilltop, then back again.
+//3 is the counting up animation, when you've failed and the rock is rolling back down.
+//4 is the results screen.
+
+player_correct = 0; //Just checking if the player is holding down the correct keys.
 
 failure_timer_max = 180;
 failure_timer = failure_timer_max;
 failure_timer_restore_rate = .25;
 
-in_play = true;
-time_pushed = 0;
+//Setting variables that allow me to control the score.
+time_pushed = 7200;
+final_time_pushed = 0;
+player_display_score = 0;
+score_iteration_rate = 0;
+failure_animation_time_modifier = 10;
+
+//This is a hack thing. Don't look.
+encouraging_words_printed = false;
+final_encouraging_words = 0;
 
 //Control what keys the player needs to be hitting at any given time.
 current_key_demands = [0, 0, 0, 0, 0];
@@ -59,4 +74,29 @@ function check_player_keys(keys_to_check)
 		{
 		return false;
 		};
+	};
+
+//Setting the "words of encouragement" we give the player in the final results screen.
+function get_encouraging_words(player_score)
+	{
+	var encouraging_words = 0; //I shit you not, if you delete this line, it all goes to shit. i do not know why.
+	
+	encouraging_words[0][0] = "Each atom of that stone, each mineral flake of that night filled mountain, in itself forms a world."
+	encouraging_words[0][1] = "The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy."
+	encouraging_words[1][0] = "All Sisyphus' silent joy is contained therein. His fate belongs to him. His rock is his thing."
+	encouraging_words[1][1] = "Likewise, the absurd man, when he contemplates his torment, silences all the idols."
+	encouraging_words[1][2] = "In the universe suddenly restored to its silence, the myriad wondering little voices of the earth rise up."
+	
+	encouraging_words[2][0] = "That's " + string(player_score / 27540) + " times the length of Billy Joel's \"Scenes from an Italian Restaurant!\"";
+	encouraging_words[3][0] = "That's about " + string(player_score / 11071) + " times the length of this shitty music loop!"
+	encouraging_words[4][0] = "Try harder, and you'll reach even greater heights next time!"
+	encouraging_words[5][0] = "It was JUUUUST right there!"
+	
+	encouraging_words[6][0] = "If this myth is tragic, that is because its hero is conscious."
+	encouraging_words[6][1] = "Where would his torture be, indeed, if at every step the hope of succeeding upheld him?"
+	encouraging_words[6][2] = "The workman of today works every day in his life at the same tasks, and this fate is no less absurd."
+	
+	encouraging_words_printed = true;
+	
+	return encouraging_words[irandom(array_length(encouraging_words) - 1)];
 	};
