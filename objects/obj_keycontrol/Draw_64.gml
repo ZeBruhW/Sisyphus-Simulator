@@ -33,11 +33,10 @@ switch gamestate
 		break; //Break case 1 and 2.
 
 	case 3: // In the failure animation, draw the player's score.
-		draw_text(0, 100, string(player_display_score));
+		draw_text(0, 100, string(player_display_score / 60));
 		break; // Break case 3.
 		
 	case 4: //In the finale
-		draw_text(0, 100, "Final Score: " + string(final_time_pushed));
 		draw_text(0, 200, "You pushed for " + string(final_time_pushed / 60) + " seconds!");
 
 		if encouraging_words_printed = false
@@ -45,12 +44,14 @@ switch gamestate
 			final_encouraging_words = get_encouraging_words(final_time_pushed);
 			}
 		
+		draw_text(0, 600, "Press Space To Continue!");
+		
 		draw_set_font(fnt_quote);
 		
 		for (i = 0; i < array_length(final_encouraging_words); i += 1)
 			{
 			draw_text(0, 300 + (50 * i), final_encouraging_words[i]);
 			};
-			
+		
 		break;
 	};

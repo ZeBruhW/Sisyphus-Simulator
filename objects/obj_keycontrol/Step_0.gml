@@ -64,11 +64,26 @@ switch gamestate
 		else //If the score is equal to... player display score, i guess??
 			{
 			//gonna level this code is a nightmare.
+			
+			//Move following line to case 4 when transitioning from case 4 to 5 is implemented.
+			global.newly_earned_xp += round(final_time_pushed / 60) //Add to XP the amount of seconds pushed, rounded to a whole number.
+			obj_scorecontrol.new_score_recieved	= true;
+			
 			gamestate = 4;
 			};
 		
 		break; //Case 3 break.
 		
 	case 4: //The final results screen.
+		if keyboard_check_direct(vk_space)
+			{
+			gamestate = 5;
+			}
 		break; //Case 4 break.
+		
+	case 5: //Showing battle pass progress.
+		break;
+		
+	case 6: //The battle pass has been shown. Display the back button.
+		break;
 	};
