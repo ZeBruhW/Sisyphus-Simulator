@@ -5,3 +5,5 @@ depth = (y * -1);
 
 rollspeed = .0625;
 fallspeed = -5;
+
+sprite_index = global.equipped_rock;

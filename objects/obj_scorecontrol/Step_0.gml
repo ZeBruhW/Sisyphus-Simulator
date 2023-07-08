@@ -9,10 +9,3 @@ if new_score_recieved
 	
 	new_score_recieved = false;
 	};
-
-/*
-if xp_tally == xp_to_next
-	{
-	//Do the level up sequence. This is going to be a pain in the ass for me.
-	}
-*/

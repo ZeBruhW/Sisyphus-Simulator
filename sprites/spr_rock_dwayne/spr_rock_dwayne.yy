@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_rock",
+  "name": "spr_rock_dwayne",
   "bbox_bottom": 63,
-  "bbox_left": 0,
-  "bbox_right": 63,
+  "bbox_left": 5,
+  "bbox_right": 57,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 2,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8127a40c-559b-45d3-920e-c4c223f740e2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff51301a-52fd-492e-b89d-25fad82b47cc",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"58bc9298-9138-4d84-9045-48ccc1108501","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8a492591-462f-4021-aca1-f9314df4e8da","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_rock",
+    "name": "spr_rock_dwayne",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8127a40c-559b-45d3-920e-c4c223f740e2","path":"sprites/spr_rock/spr_rock.yy",},},},"Disabled":false,"id":"3e0fc2a1-a904-4975-a30b-60d80319f623","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ff51301a-52fd-492e-b89d-25fad82b47cc","path":"sprites/spr_rock_dwayne/spr_rock_dwayne.yy",},},},"Disabled":false,"id":"28597fe5-ed01-49c4-bc83-40cf401fc6cf","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

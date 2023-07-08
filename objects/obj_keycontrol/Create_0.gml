@@ -16,7 +16,7 @@ failure_timer = failure_timer_max;
 failure_timer_restore_rate = .25;
 
 //Setting variables that allow me to control the score.
-time_pushed = 7200;
+time_pushed = 0;
 final_time_pushed = 0;
 player_display_score = 0;
 score_iteration_rate = 0;

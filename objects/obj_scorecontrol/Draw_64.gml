@@ -15,6 +15,6 @@ if room == TheHill
 
 if room == rm_battlepass
 	{
-	draw_text(0, 200, global.battle_level);
-	draw_text(0, 300, global.battle_xp);
+	draw_text(0, 200, "Battle Pass Level: " + string(global.battle_level));
+	draw_text(0, 250, "Battle Pass XP: " + string(global.battle_xp) + " / " + string(next_xp_threshold));
 	};

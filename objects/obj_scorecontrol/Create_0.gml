@@ -1,8 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//Lesset some fucking variables.
+//Setting default skins.
+//There's gotta be a better place to do this, but fuck it. Who cares.
+global.equipped_rock = spr_rock;
 
+//Lesset some fucking variables.
 global.battle_xp = 0; //EXP is directly just the player's time spent pushing, rounded to the nearest integer.
 global.battle_level = 0;
 
@@ -27,7 +30,8 @@ function level_up()
 	global.battle_level += 1;
 	next_xp_threshold = next_xp_threshold * 2;
 	
-	//Do all of the code I need to actually like. Handle levelups and shit.
+	obj_unlockcontrol.do_unlock = true; //This will tell unlock control to do the unlocking.
+	//I could do it here, but it's honestly way cleaner to handle it this way, I prommy.
 	
 	alarm[0] = 60;
 	};
