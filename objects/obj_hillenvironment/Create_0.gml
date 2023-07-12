@@ -8,13 +8,22 @@ falling_movement_rate = -12;
 //First one is the sprite name, then the number is if it needs to be rotated.
 //Some things don't need to be rotated, like trees or flowers.
 potential_sprites[0][0] = spr_env_stone;
-potential_sprites[0][1] = 1;
+potential_sprites[0][1] = 1; //Does this sprite need to be rotated?
 
 potential_sprites[1][0] = spr_env_singlerose;
 potential_sprites[1][1] = 0;
 
 potential_sprites[2][0] = spr_env_tallgrass;
 potential_sprites[2][1] = 1;
+
+potential_sprites[3][0] = spr_env_bush1;
+potential_sprites[3][1] = 0;
+
+potential_sprites[4][0] = spr_env_bush2;
+potential_sprites[4][1] = 0;
+
+potential_sprites[5][0] = spr_env_peony;
+potential_sprites[5][1] = 0;
 
 function move_object(movespeed)
 	{
