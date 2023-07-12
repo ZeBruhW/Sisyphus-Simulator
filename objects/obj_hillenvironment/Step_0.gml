@@ -13,7 +13,7 @@ switch obj_keycontrol.gamestate
 		if y >= room_height + sprite_height and (irandom(120) == 120)
 			{
 			var spawn_offset_x = 120;
-			var spawn_offset_y = obj_hill.y - (spawn_offset_x / 3)
+			var spawn_offset_y = 380 - (spawn_offset_x / 3)
 	
 			x = room_width + spawn_offset_x;
 			y = random_range(spawn_offset_y, room_height);
@@ -33,7 +33,7 @@ switch obj_keycontrol.gamestate
 		if x >= room_width + sprite_width and (irandom(60) == 60)
 			{
 			var spawn_offset_y = 224;
-			var spawn_offset_x = obj_hill.x - (spawn_offset_y * 2);
+			var spawn_offset_x = 0 - (spawn_offset_y * 2);
 	
 			x = random_range(spawn_offset_x, room_width - 200);
 			y = room_height + spawn_offset_y;

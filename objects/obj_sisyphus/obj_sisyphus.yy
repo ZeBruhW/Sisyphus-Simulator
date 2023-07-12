@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_hill",
-  "eventList": [],
+  "name": "obj_sisyphus",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_hillhigherres",
-    "path": "sprites/spr_hillhigherres/spr_hillhigherres.yy",
+    "name": "spr_sisyphus",
+    "path": "sprites/spr_sisyphus/spr_sisyphus.yy",
   },
   "spriteMaskId": null,
   "visible": true,

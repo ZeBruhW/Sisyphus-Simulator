@@ -6,4 +6,3 @@ if	button_active == true
 	{
 	event_inherited();
 	}
-

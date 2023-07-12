@@ -1,45 +1,37 @@
 //On creation.
 
 //Setting useful variables.
-pushing_movement_rate = .15;
-falling_movement_rate = -12;
+pushing_movement_rate = global.pushing_movement_rate;
+falling_movement_rate = global.falling_movement_rate;
 
 //The list of potential sprites, add it to the array to make it work.
 //First one is the sprite name, then the number is if it needs to be rotated.
 //Some things don't need to be rotated, like trees or flowers.
-potential_sprites[0][0] = spr_env_stone;
-potential_sprites[0][1] = 1; //Does this sprite need to be rotated?
+potential_sprites[0][0] = spr_env_bush1;
+potential_sprites[0][1] = 0; //1 if the sprite needs to be rotated to match the hill steepness.
+potential_sprites[0][2] = 3; //Maximum size for the random scaling.
 
-potential_sprites[1][0] = spr_env_singlerose;
+potential_sprites[1][0] = spr_env_bush2;
 potential_sprites[1][1] = 0;
+potential_sprites[1][2] = 3;
 
-potential_sprites[2][0] = spr_env_tallgrass;
-potential_sprites[2][1] = 1;
-
-potential_sprites[3][0] = spr_env_bush1;
-potential_sprites[3][1] = 0;
-
-potential_sprites[4][0] = spr_env_bush2;
-potential_sprites[4][1] = 0;
-
-potential_sprites[5][0] = spr_env_peony;
-potential_sprites[5][1] = 0;
+potential_sprites[2][0] = spr_env_peony;
+potential_sprites[2][1] = 0;
+potential_sprites[2][2] = 1.5;
 
 function move_object(movespeed)
 	{
-	x -= movespeed + (movespeed * (power(closeness, 2)));
-	y += (movespeed + (movespeed * (power(closeness, 2)))) / 3;
+	x -= movespeed;
+	y += movespeed / 3;
+	
+	//x -= movespeed + (movespeed * (power(closeness, 2))); //Optional parallax scroll version.
+	//y += (movespeed + (movespeed * (power(closeness, 2)))) / 3; //Optional parallax version.
 	};
 	
 function randomize_sprite()
 	{
-	closeness = (y / room_height);//This is to fake parallax scrolling.
+	//closeness = (y / room_height); //This is to fake parallax scrolling.
 	depth = y * -1;
-	
-	var scale_ratio = irandom_range(5, 10);
-	scale_ratio = scale_ratio * (closeness); //Faking the things further away from camera being smaller.
-	image_xscale = scale_ratio;
-	image_yscale = scale_ratio;
 	
 	var sprite_slot = irandom(array_length(potential_sprites) - 1);
 	
@@ -56,6 +48,11 @@ function randomize_sprite()
 		{
 		image_angle = 0;
 		};
+		
+	var scale_ratio = random_range(2, potential_sprites[sprite_slot][2]);
+	//scale_ratio = scale_ratio * (closeness); //Faking the things further away from camera being smaller.
+	image_xscale = scale_ratio;
+	image_yscale = scale_ratio;
 	};
 	
 //Randomize your sprite, big boy.

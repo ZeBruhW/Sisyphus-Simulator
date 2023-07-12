@@ -9,21 +9,32 @@ if gamestate == 1
 	//Yes this is to prevent making an array that has literally the entirety of every key on the keyboard. Fuck off.
 	if difficulty_level == threshold_length
 		{
-		set_to_pick_from = irandom_range((threshold_length - 2), (threshold_length - 1));
+		set_to_pick_from = irandom_range(2, 3);
 		}
 
 	//Select the new key.
-	var newkey = keyset[set_to_pick_from, irandom(array_length(keyset[difficulty_level]) - 1)];
+	var newkey = keyset[set_to_pick_from, irandom(array_length(keyset[set_to_pick_from]) - 1)];
 
 	//And then insert it into the list of key demands.
 	current_key_demands[slot_to_fill] = newkey;
 
 	//Incrementing the difficulty level if you've met the threshold for pushing the right amount of time.
-	if time_pushed >= difficulty_threshold[difficulty_level] and difficulty_level != (threshold_length)
+	
+	if difficulty_level < threshold_length
+		{
+		if time_pushed > difficulty_threshold[difficulty_level]
+			{
+			difficulty_level += 1;
+			current_key_demands = [0, 0, 0, 0, 0];
+			}
+		}
+	/*
+	if (time_pushed >= difficulty_threshold[difficulty_level]) and (difficulty_level != threshold_length)
 		{
 		current_key_demands = [0, 0, 0, 0, 0];
 		difficulty_level += 1
 		}
+	*/
 
 	alarm_set(0, irandom_range(120, 600));
 	};

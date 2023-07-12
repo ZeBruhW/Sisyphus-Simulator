@@ -11,6 +11,7 @@ gamestate = 0; //This will track the overarching current state of the game.
 
 player_correct = 0; //Just checking if the player is holding down the correct keys.
 
+//Setting failure timer variables.
 failure_timer_max = 180;
 failure_timer = failure_timer_max;
 failure_timer_restore_rate = .25;
@@ -41,12 +42,12 @@ keyset[3] = ["Y", "U", "I", "O", "P", "H", "J", "K", "L", "B", "N", "M", "[", "]
 //Yeah this shit's lazy. Fight me. I'm the programmer, here, you're not my dad.
 
 //Setting the time thresholds that need to be met in order to increase the keyset difficulty.
-difficulty_threshold = [900, 2400, 5400, 7200] //In frames, not seconds.
+difficulty_threshold = [900, 2400, 3900, 4800]; //In frames, not seconds.
 difficulty_level = 0;
 
 //Set the alarm that decides how long until the next required key spawns.
 alarm_set(0, 240); //This alarm determines when the first required key will be picked.
-alarm_set(1, 600); //This alarm determines when the first required keys will start to fade.
+alarm_set(1, 400); //This alarm determines when the first required keys will start to fade.
 
 //Setting up functions.
 

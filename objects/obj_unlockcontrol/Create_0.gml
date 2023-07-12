@@ -23,9 +23,34 @@ rockunlocks[2][2] = "Blue rock";
 rockunlocks[2][3] = "Definitely not a natural color for a rock. Coincidentally smells like paint.";
 
 rockunlocks[3][0] = false;
-rockunlocks[3][1] = spr_rock_dwayne;
-rockunlocks[3][2] = "The Rock";
-rockunlocks[3][3] = "Unsatisfied with his wrestling or acting careers, Dwayne underwent experimental pixellation surgery.";
+rockunlocks[3][1] = spr_rock_grey;
+rockunlocks[3][2] = "Grey Rock";
+rockunlocks[3][3] = "Somehow more boring than the normal rock.";
+
+rockunlocks[4][0] = false;
+rockunlocks[4][1] = spr_rock_cheeto;
+rockunlocks[4][2] = "Orange rock";
+rockunlocks[4][3] = "Contrary to appearance, it is a rock, not a cheese puff.";
+
+rockunlocks[5][0] = false;
+rockunlocks[5][1] = spr_rock_negative;
+rockunlocks[5][2] = "Inverted Rock";
+rockunlocks[5][3] = "This isn't how light works. But within the magic of video games, anything can be possible.";
+
+rockunlocks[6][0] = false;
+rockunlocks[6][1] = spr_rock_snowball;
+rockunlocks[6][2] = "Snowball";
+rockunlocks[6][3] = "If you close your eyes, you can imagine you're preparing to build the world's best snowman!";
+
+rockunlocks[7][0] = false;
+rockunlocks[7][1] = spr_rock_old;
+rockunlocks[7][2] = "Programmer Art Rock";
+rockunlocks[7][3] = "remember to put something here before release";
+
+rockunlocks[8][0] = false;
+rockunlocks[8][1] = spr_rock_dwayne;
+rockunlocks[8][2] = "The Rock";
+rockunlocks[8][3] = "CAN YOU SMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL";
 
 //The unlocks for sysiphus.
 //These aren't in yet because there isn't anything yet.

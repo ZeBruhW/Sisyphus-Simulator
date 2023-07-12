@@ -6,9 +6,6 @@ if room == TheHill
 	switch obj_keycontrol.gamestate
 		{
 		case 0:
-		case 1:
-		case 2:
-		case 3:
 		case 6:
 			button_active = true;
 			break;

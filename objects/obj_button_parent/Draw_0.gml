@@ -3,6 +3,13 @@
 /// @DnDHash : 53E9C5F5
 draw_self();
 
+/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDVersion : 1
+/// @DnDHash : 56037B61
+draw_set_colour($FFFFFFFF & $ffffff);
+var l56037B61_0=($FFFFFFFF >> 24);
+draw_set_alpha(l56037B61_0 / $ff);
+
 /// @DnDAction : YoYo Games.Drawing.Set_Font
 /// @DnDVersion : 1
 /// @DnDHash : 09121403
