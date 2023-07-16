@@ -7,7 +7,7 @@
 switch obj_keycontrol.gamestate
 	{
 	case 1:
-		if obj_keycontrol.player_correct and y < room_height
+		if obj_keycontrol.player_correct and y <= room_height //The bug is in here.
 			{
 			y += pushing_movement_rate / 3;
 			x -= pushing_movement_rate;
@@ -18,4 +18,15 @@ switch obj_keycontrol.gamestate
 			y = 256;
 			};
 		break;
+	case 3:
+		if x < 1609
+			{
+			y += falling_movement_rate / 3;
+			x -= falling_movement_rate;
+			}
+		else
+			{
+			x = 50;
+			y = 823;
+			}
 	};

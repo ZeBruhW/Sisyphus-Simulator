@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Hill Objects",
-    "path": "folders/Objects/Hill Objects.yy",
+    "name": "Controls",
+    "path": "folders/Objects/Controls.yy",
   },
   "parentObjectId": null,
   "persistent": false,
