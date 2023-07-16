@@ -14,19 +14,19 @@ switch obj_keycontrol.gamestate
 			};
 		else if y > room_height
 			{
-			x = 1744;
-			y = 256;
+			x = 1701;
+			y = 201;
 			};
 		break;
 	case 3:
-		if x < 1609
+		if x <= falling_despawn_x
 			{
 			y += falling_movement_rate / 3;
 			x -= falling_movement_rate;
 			}
 		else
 			{
-			x = 50;
-			y = 823;
+			x = 0 //falling_spawn_x;
+			y = 768 //falling_spawn_y;
 			}
 	};

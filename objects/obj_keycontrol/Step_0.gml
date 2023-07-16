@@ -53,6 +53,55 @@ switch gamestate
 		score_iteration_rate = final_time_pushed / failure_animation_length;
 		
 		gamestate = 3;
+		
+		var lowest_x = 0;
+		var lowest_y = 0;
+		var highest_x = 0;
+		var highest_y = 0;
+		
+		for (var i = 0; i < instance_number(obj_hilltile); i++)
+			{
+			var tile = instance_find(obj_hilltile, i);
+			
+			if i == 0 //If this is the first tile, then just save their X and Y coords.
+				{
+				lowest_x = tile.x;
+				lowest_y = tile.y;
+				highest_x = tile.x;
+				highest_y = tile.y;
+				}
+			else //If not, start COMPARING BABY.
+				{
+				if tile.x < lowest_x
+					{
+					lowest_x = tile.x;
+					};
+				if tile.x > highest_x
+					{
+					highest_x = tile.x
+					};
+				if tile.y < lowest_y
+					{
+					lowest_y = tile.y
+					};
+				if tile.y > highest_y
+					{
+					highest_y = tile.y
+					};
+				};
+			};
+		
+		//does not work. a valient try.
+		
+		/*
+		instance_create_layer(highest_x + 243, lowest_y - 81, "hill", obj_hilltile);
+		instance_create_layer(lowest_x - 243, highest_y + 81, "hill", obj_hilltile);
+		*/
+		
+		obj_hilltile.falling_spawn_x = lowest_x;
+		obj_hilltile.falling_spawn_y = highest_y;
+		obj_hilltile.falling_despawn_x = highest_x;
+		
 		break; //Case 2 break.
 		
 	case 3: //The failure animation as the rock rolls back down and the score ticks up.
