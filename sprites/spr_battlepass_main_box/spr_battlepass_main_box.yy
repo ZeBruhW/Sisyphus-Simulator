@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_credits_menu",
-  "bbox_bottom": 799,
+  "name": "spr_battlepass_main_box",
+  "bbox_bottom": 249,
   "bbox_left": 0,
-  "bbox_right": 1369,
+  "bbox_right": 1042,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0c7386a0-70e0-4156-b91c-5ddcda20fcf2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cf31e0a5-c786-4825-aeca-cb3d93c3efe4",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 800,
+  "height": 250,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"308417c0-1099-4efc-b12c-a4165508f0c1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"24a90f0d-1983-4e67-920d-72934b3f0c1d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_credits_menu",
+    "name": "spr_battlepass_main_box",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0c7386a0-70e0-4156-b91c-5ddcda20fcf2","path":"sprites/spr_credits_menu/spr_credits_menu.yy",},},},"Disabled":false,"id":"2c9d58e9-5eed-4c81-8fd1-150e1c9d25ae","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cf31e0a5-c786-4825-aeca-cb3d93c3efe4","path":"sprites/spr_battlepass_main_box/spr_battlepass_main_box.yy",},},},"Disabled":false,"id":"0a1c19dd-24ef-4659-9732-76feb04ce749","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1370,
+  "width": 1043,
 }
