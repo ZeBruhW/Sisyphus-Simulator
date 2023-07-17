@@ -1,23 +1,31 @@
-draw_text(0, 0, "Up and down to scroll through skins.")
-draw_text(0, 25, "Enter to select one.")
-
 //Display the currently hovered rock's name.
-draw_text(100, 100, rock_selected[2]);
-
 if rock_selected[0] == true
 	{
-	draw_sprite_ext(rock_selected[1], 0, 300, 300, 5, 5, 0, c_white, 1);
+	draw_sprite_ext(rock_selected[1], 0, 208, 408, 2.5, 2.5, 0, c_white, 1);
 	};
 else //If it's not unlocked, draw it with the padlock on it.
 	{
-	draw_sprite_ext(rock_selected[1], 0, 300, 300, 5, 5, 0, c_white, .5);
-	draw_sprite_ext(spr_padlock, 0, 300, 300, 3, 3, 0, c_white, 1);
+	draw_sprite_ext(rock_selected[1], 0, 208, 408, 2.5, 2.5, 0, c_black, 1);
+	draw_sprite_ext(spr_padlock, 0, 208, 408, 2, 2, 0, c_white, 1);
 	};
 
+draw_set_font(fnt_menularge);
+draw_set_color(c_black);
+draw_set_halign(fa_center);
+
+//Draw the currently selected rock's name.
+draw_text(882.5, 170, rock_selected[2]);
+
+//draw_set_font(fnt_menu);
+draw_set_font(fnt_menumed);
+
 //Display the currently hovered rock's flavor text.
-draw_text(100, 500, rock_selected[3]);
+for (var i = 0; i < array_length(rock_selected[3]); i++)
+	{
+	draw_text(883, 296 + (i * 48), rock_selected[3][i]);
+	}
 
-
+/*
 //Drawing the currently equipped rock.
 draw_sprite_ext(global.equipped_rock, 0, 1000, 200, 3, 3, 0, c_white, 1);
 
@@ -29,3 +37,4 @@ else
 	{
 	draw_text(900, 300, "Equipped!");
 	}
+*/
