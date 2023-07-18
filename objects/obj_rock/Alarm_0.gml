@@ -1,0 +1,3 @@
+// Dust VFX
+
+canDust = true;

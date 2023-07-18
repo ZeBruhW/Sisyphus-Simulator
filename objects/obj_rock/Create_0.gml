@@ -12,3 +12,6 @@ rollspeed = global.pushing_movement_rate / 3;
 fallspeed = -5;
 
 sprite_index = global.equipped_rock;
+
+// Dust VFX activation
+canDust = true;

@@ -1,0 +1,3 @@
+// Sweat VFX
+
+canSweat = true;

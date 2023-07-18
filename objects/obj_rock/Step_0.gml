@@ -23,4 +23,13 @@ switch obj_keycontrol.gamestate
 		break; //Case 4 break.
 	};
 
+// Dust VFX
+if ((obj_keycontrol.player_correct = true) and canDust == true) {
 	
+	canDust = false;
+	var randomTime = irandom_range(-1,2);
+	alarm_set(0, 8 + randomTime);
+	
+	part_particles_create(obj_Particle_setup.particle_System, x-25, y+120, obj_Particle_setup.particle_Dust, 10 );
+	part_particles_create(obj_Particle_setup.particle_System, x+90, y+80, obj_Particle_setup.particle_Dust, 10 );
+	};

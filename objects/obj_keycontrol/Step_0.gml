@@ -136,3 +136,4 @@ switch gamestate
 	case 6: //The battle pass has been shown. Display the back button.
 		break;
 	};
+	

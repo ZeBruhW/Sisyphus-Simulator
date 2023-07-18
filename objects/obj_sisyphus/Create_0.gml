@@ -11,3 +11,7 @@
 //is this a reference ANYONE else gets
 
 depth = obj_rock.depth - 1;
+
+// Sweat VFX
+
+canSweat = true;

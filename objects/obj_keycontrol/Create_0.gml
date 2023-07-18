@@ -101,3 +101,4 @@ function get_encouraging_words(player_score)
 	
 	return encouraging_words[irandom(array_length(encouraging_words) - 1)];
 	};
+
