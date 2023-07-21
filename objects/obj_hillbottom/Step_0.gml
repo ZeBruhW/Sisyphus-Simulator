@@ -21,22 +21,23 @@ switch obj_keycontrol.gamestate
 			//Do a different animation timing for this one??
 			//}
 		
-		if y > final_y and steps_left <= 500 and steps_left > 0
-			{
-				
-			if rate_found == false
-				{
-					
+		if rate_found == false
+				{	
 				starting_step_count = steps_left;
 				
 				ending_initial_x = x;
 				ending_initial_y = y;
-				
-				//distance_to_final_x = (x - final_x) //(final_x - x);
-				//distance_to_final_y = (y - final_y) //(final_y - y);
+
+				if ending_initial_y < room_height
+					{
+					start_moving_threshold = starting_step_count;
+					};
 
 				rate_found = true;
 				}
+		
+		if y > final_y and steps_left <= start_moving_threshold and steps_left > 0
+			{
 
 			var normalized_rise_progress = 1 - (steps_left / starting_step_count);
 

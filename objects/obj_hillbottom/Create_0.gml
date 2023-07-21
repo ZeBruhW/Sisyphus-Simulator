@@ -11,6 +11,8 @@ ending_initial_y = 0;
 steps_left = 0;
 starting_step_count = 0;
 
+start_moving_threshold = 500;
+
 rate_found = false;
 
 depth = obj_hilltile.depth - 1;
