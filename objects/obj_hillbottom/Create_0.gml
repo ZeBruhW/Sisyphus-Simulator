@@ -2,13 +2,14 @@
 // You can write your code in this editor
 
 
-final_x = 864;
+final_x = x + 864;
 final_y = 464;
 
-steps_left = 0;
+ending_initial_x = 0;
+ending_initial_y = 0;
 
-distance_to_final_x = 0;
-distance_to_final_y = 0;
+steps_left = 0;
+starting_step_count = 0;
 
 rate_found = false;
 

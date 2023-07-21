@@ -16,27 +16,32 @@ switch obj_keycontrol.gamestate
 		
 		//Do different animation timings for if the hill is still visible or not.
 		
-		if y < room_height
-			{
+		//if y < room_height
+			//{
 			//Do a different animation timing for this one??
-			}
+			//}
 		
 		if y > final_y and steps_left <= 500 and steps_left > 0
 			{
 				
 			if rate_found == false
-				{			
-				distance_to_final_x = (final_x - x);
-				distance_to_final_y = (final_y - y);
+				{
+					
+				starting_step_count = steps_left;
 				
-				moverate_x = distance_to_final_x / steps_left
-				moverate_y = distance_to_final_y / steps_left
-				}
-			//This needs to be changed to some sort of formula to ensure it always gets there, rather than
-			//A flat movement speed.
+				ending_initial_x = x;
+				ending_initial_y = y;
+				
+				//distance_to_final_x = (x - final_x) //(final_x - x);
+				//distance_to_final_y = (y - final_y) //(final_y - y);
 
-			x -= moverate_x;
-			y += moverate_y;
+				rate_found = true;
+				}
+
+			var normalized_rise_progress = 1 - (steps_left / starting_step_count);
+
+			x = lerp(ending_initial_x, final_x, normalized_rise_progress / 3);
+			y = lerp(ending_initial_y, final_y, normalized_rise_progress);
 			}
 		break;
 	};
