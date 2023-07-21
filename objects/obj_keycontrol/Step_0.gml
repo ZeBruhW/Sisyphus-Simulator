@@ -48,7 +48,7 @@ switch gamestate
 		
 		//Final time pushed is the variable that ultimately will be exported as your score.
 		
-		var failure_animation_length = final_time_pushed / failure_animation_time_modifier;
+		var failure_animation_length = final_time_pushed * failure_animation_time_modifier;
 		
 		score_iteration_rate = final_time_pushed / failure_animation_length;
 		

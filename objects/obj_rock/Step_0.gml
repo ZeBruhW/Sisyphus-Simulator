@@ -20,6 +20,15 @@ switch obj_keycontrol.gamestate
 		break; //Case 3 break.
 		
 	case 4: //The results screen.
+		image_angle -= fallspeed;
+		if x > (0 - (sprite_width / 2))
+			{
+			hspeed = -10;
+			}
+		else
+			{
+			hspeed = 0;
+			}
 		break; //Case 4 break.
 	};
 

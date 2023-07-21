@@ -1,9 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//Setting the default skin.
+global.equipped_rock = spr_rock;
+
 //Variables, bitch
 do_unlock = false;
 show_new_unlock = false;
+
+//Variables for drawing the battle pass menu.
+furthest_left = 1;
 
 //Define all the possible rock unlocks.
 //They don't need to be in order, don't worry.
@@ -69,11 +75,32 @@ rockunlocks[8][3][0] = "CAN YOU SMEEEEEEEEEEEEEEEEEEEEEEEELL";
 //This starts at 1 for future clarity reasons.
 //When setting something to be unlocked, do rewardlist[level][0] = true.
 //That'll unlock it fine, if I did my math right.
-//If you don't want a reward that tier, set it to just say "Empty."
+//If you don't want a reward that tier, set it to 0.
 
-rewardlist[1] = rockunlocks[1];
-rewardlist[2] = rockunlocks[2];
-rewardlist[3] = rockunlocks[3];
+rewardlist[1] = rockunlocks[3];
+rewardlist[2] = 0
+rewardlist[3] = rockunlocks[1];
+rewardlist[4] = rockunlocks[2];
+rewardlist[6] = 0;
+rewardlist[7] = rockunlocks[4];
+rewardlist[8] = 0;
+rewardlist[9] = 0;
+rewardlist[10] = rockunlocks[5];
+rewardlist[11] = 0;
+rewardlist[12] = 0;
+rewardlist[13] = rockunlocks[6];
+rewardlist[14] = 0;
+rewardlist[15] = 0;
+rewardlist[16] = rockunlocks[7];
+rewardlist[17] = 0;
+rewardlist[18] = 0;
+rewardlist[19] = 0;
+rewardlist[20] = rockunlocks[8];
+rewardlist[21] = 0;
+rewardlist[22] = 0;
+rewardlist[23] = 0;
+rewardlist[24] = 0;
+rewardlist[25] = 0;
 
 number_of_rocks = array_length(rockunlocks);
-rewardcap = array_length(rewardlist);
+rewardcap = array_length(rewardlist) - 1;

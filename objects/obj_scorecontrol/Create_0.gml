@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//Setting default skins.
-//There's gotta be a better place to do this, but fuck it. Who cares.
-global.equipped_rock = spr_rock;
-
 //Lesset some fucking variables.
 global.battle_xp = 0; //EXP is directly just the player's time spent pushing, rounded to the nearest integer.
 global.battle_level = 0;

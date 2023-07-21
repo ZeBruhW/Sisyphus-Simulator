@@ -16,7 +16,7 @@ potential_sprites[1][1] = 0;
 potential_sprites[1][2] = 3;
 
 potential_sprites[2][0] = spr_env_peony;
-potential_sprites[2][1] = 0;
+potential_sprites[2][1] = 1;
 potential_sprites[2][2] = 1.5;
 
 function move_object(movespeed)
@@ -38,7 +38,7 @@ function randomize_sprite()
 	sprite_index = potential_sprites[sprite_slot][0];
 
 	//Rotate the sprite if you need to. If not, don't bother.
-	image_angle = potential_sprites[sprite_slot][1] * 18.5;
+	image_angle = potential_sprites[sprite_slot][1] * 18.43;
 
 	if potential_sprites[sprite_slot][1] == true //Rotate the sprite if you need to rotate it, if not, don't.
 		{

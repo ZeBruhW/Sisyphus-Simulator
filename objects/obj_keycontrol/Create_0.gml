@@ -12,16 +12,16 @@ gamestate = 0; //This will track the overarching current state of the game.
 player_correct = 0; //Just checking if the player is holding down the correct keys.
 
 //Setting failure timer variables.
-failure_timer_max = 240;
+failure_timer_max = 200;
 failure_timer = failure_timer_max;
 failure_timer_restore_rate = .25;
 
 //Setting variables that allow me to control the score.
-time_pushed = 0;
+time_pushed = 7200;
 final_time_pushed = 0;
 player_display_score = 0;
 score_iteration_rate = 0;
-failure_animation_time_modifier = 10;
+failure_animation_time_modifier = .1;
 
 //This is a hack thing. Don't look.
 encouraging_words_printed = false;

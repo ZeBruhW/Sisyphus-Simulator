@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//xp tally iteration.
+//xp tally iteration for the XP tracker in gamestate 5.
 //This will also probably control level ups.
 //Look. I know I should control level ups elsewhere.
 //But I am so tired. And if I have to program this shit twice, I am going to snap like a twig.
