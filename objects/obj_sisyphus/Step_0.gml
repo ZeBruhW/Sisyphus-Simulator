@@ -10,7 +10,7 @@ switch obj_keycontrol.gamestate
 			}
 		else
 			{
-			sprite_index = spr_sisyphus;
+			sprite_index = spr_anim_sisyidle;
 			}
 		break;
 	}

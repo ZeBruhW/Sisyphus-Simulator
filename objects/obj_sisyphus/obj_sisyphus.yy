@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_sisyphus",
-    "path": "sprites/spr_sisyphus/spr_sisyphus.yy",
+    "name": "spr_anim_sisyidle",
+    "path": "sprites/spr_anim_sisyidle/spr_anim_sisyidle.yy",
   },
   "spriteMaskId": null,
   "visible": true,
