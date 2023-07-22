@@ -4,7 +4,7 @@
   "name": "spr_apply",
   "bbox_bottom": 91,
   "bbox_left": 0,
-  "bbox_right": 299,
+  "bbox_right": 341,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3597456-eba8-4700-8a56-e9173bdc4be1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14ac38df-b402-491c-9ac2-47037a0285d5",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 92,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7fd3844f-c713-4111-b742-181528e332bb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"46a65a0a-8bcb-4669-8c52-c1e8b6234d98","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c3597456-eba8-4700-8a56-e9173bdc4be1","path":"sprites/spr_apply/spr_apply.yy",},},},"Disabled":false,"id":"663445bd-0f47-442a-a50d-93b4f2480728","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"14ac38df-b402-491c-9ac2-47037a0285d5","path":"sprites/spr_apply/spr_apply.yy",},},},"Disabled":false,"id":"2460a7a5-2a6d-4cd5-a0d7-2ec1fb49026a","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 300,
+  "width": 342,
 }
