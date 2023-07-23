@@ -7,11 +7,10 @@ depth = (y * -1);
 global.pushing_movement_rate = .25;
 global.falling_movement_rate = -12;
 
-//rollspeed = .0625;
-rollspeed = global.pushing_movement_rate / 3;
-fallspeed = -5;
 
+do_animation = global.do_rock_anim;
 sprite_index = global.equipped_rock;
+image_speed = 0;
 
 // Dust VFX activation
 canDust = true;

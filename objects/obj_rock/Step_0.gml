@@ -8,22 +8,52 @@ switch obj_keycontrol.gamestate
 	case 1: //The main gameplay loop.
 		if obj_keycontrol.player_correct
 			{
-			image_angle -= rollspeed;
+			
+			if do_animation == true
+				{
+				image_speed = .33;
+				}
+			//else
+				//{
+				image_angle -= .125;
+				//}
 			};
+		else
+			{
+			image_speed = 0;
+			}
+			
 		break; //Case 1 break.
 	
 	case 2: //The camera move cutscene after failure.
 		break; //Case 2 break.
 	
 	case 3: //The failure rolldown and countup.
-		image_angle -= fallspeed;
+	
+		if do_animation == true
+				{
+				image_speed = -1.5;
+				}
+			else
+				{
+				image_angle += 10;
+				}
+	
 		break; //Case 3 break.
 		
 	case 4: //The results screen.
-		image_angle -= fallspeed;
+		if do_animation == true
+				{
+				image_speed = -1.5;
+				}
+			else
+				{
+				image_angle += 10;
+				}
+	
 		if x > (0 - (sprite_width / 2))
 			{
-			hspeed = -10;
+			hspeed = -15;
 			}
 		else
 			{

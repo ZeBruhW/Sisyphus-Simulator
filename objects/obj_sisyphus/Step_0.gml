@@ -11,7 +11,33 @@ switch obj_keycontrol.gamestate
 		else
 			{
 			sprite_index = spr_anim_sisyidle;
+			image_speed = 2 + (2* (obj_keycontrol.failure_timer / obj_keycontrol.failure_timer_max));
 			}
+		break;
+	case 3:
+			
+	if x < (room_width + sprite_width)
+			{
+			x -= global.falling_movement_rate;
+			y += global.falling_movement_rate / 3;
+			}
+	
+	case 4:
+	case 5:
+	case 6:
+	//Failure animation
+		
+	sprite_index = spr_anim_sisyfall;
+		
+		if image_index >= (image_number - 1)
+			{
+			image_speed = 0;
+			}
+		else
+			{
+			image_speed = .5;
+			}
+			
 		break;
 	}
 

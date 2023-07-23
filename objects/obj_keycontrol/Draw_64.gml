@@ -34,6 +34,9 @@ switch gamestate
 	
 	draw_set_color(c_white);
 	
+	//Draw the box the D key will be in.
+	draw_sprite_ext(spr_battlepass_highlightbox, 0, 352, 128, .5, .5, 0, c_white, 1);
+	
 	//Draw all the player's requested buttons.
 	if keyboard_check_direct(ord("D"))
 				{
@@ -47,16 +50,23 @@ switch gamestate
 
 	for (var i = 0; i < array_length(current_key_demands); i += 1)
 		{
+		
+		var current_draw_x = 480 + (i * 128)
+		
+		//Draw the box the key will be in.
+		draw_sprite_ext(spr_battlepass_highlightbox, 0, current_draw_x, 128, .5, .5, 0, c_white, 1);
+			
 		if current_key_demands[i] != 0
 			{
+				
 			if keyboard_check_direct(ord(current_key_demands[i]))
 				{
-				draw_text(480 + (i * 128), 128, current_key_demands[i]);
+				draw_text(current_draw_x, 128, current_key_demands[i]);
 				//string(current_key_demands[i])
 				};
 			else
 				{
-				draw_text_color(480 + (i * 128), 128, current_key_demands[i], c_red, c_red, c_red, c_red, 1);
+				draw_text_color(current_draw_x, 128, current_key_demands[i], c_red, c_red, c_red, c_red, 1);
 				};
 			};
 		};

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_env_stone",
-    "path": "sprites/spr_env_stone/spr_env_stone.yy",
+    "name": "spr_env_programmerstone",
+    "path": "sprites/spr_env_programmerstone/spr_env_programmerstone.yy",
   },
   "spriteMaskId": null,
   "visible": true,
