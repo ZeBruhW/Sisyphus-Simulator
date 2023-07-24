@@ -43,7 +43,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"spr_skystatic","path":"sprites/spr_skystatic/spr_skystatic.yy",},},
@@ -57,6 +57,7 @@
     {"id":{"name":"spr_hillbackground","path":"sprites/spr_hillbackground/spr_hillbackground.yy",},},
     {"id":{"name":"fnt_menumed","path":"fonts/fnt_menumed/fnt_menumed.yy",},},
     {"id":{"name":"obj_button_skindown","path":"objects/obj_button_skindown/obj_button_skindown.yy",},},
+    {"id":{"name":"spr_godsend_static","path":"sprites/spr_godsend_static/spr_godsend_static.yy",},},
     {"id":{"name":"spr_skins_menu","path":"sprites/spr_skins_menu/spr_skins_menu.yy",},},
     {"id":{"name":"spr_padlock","path":"sprites/spr_padlock/spr_padlock.yy",},},
     {"id":{"name":"fnt_quote","path":"fonts/fnt_quote/fnt_quote.yy",},},
@@ -109,6 +110,8 @@
     {"id":{"name":"spr_credits","path":"sprites/spr_credits/spr_credits.yy",},},
     {"id":{"name":"spr_battlepass_left_button","path":"sprites/spr_battlepass_left_button/spr_battlepass_left_button.yy",},},
     {"id":{"name":"spr_battlepass_levelbox","path":"sprites/spr_battlepass_levelbox/spr_battlepass_levelbox.yy",},},
+    {"id":{"name":"spr_midasboulder_anim","path":"sprites/spr_midasboulder_anim/spr_midasboulder_anim.yy",},},
+    {"id":{"name":"spr_midasboulder_static","path":"sprites/spr_midasboulder_static/spr_midasboulder_static.yy",},},
     {"id":{"name":"spr_anim_sisyfall","path":"sprites/spr_anim_sisyfall/spr_anim_sisyfall.yy",},},
     {"id":{"name":"spr_env_bush1","path":"sprites/spr_env_bush1/spr_env_bush1.yy",},},
     {"id":{"name":"spr_skin_titles","path":"sprites/spr_skin_titles/spr_skin_titles.yy",},},
@@ -122,6 +125,7 @@
     {"id":{"name":"obj_button_back","path":"objects/obj_button_back/obj_button_back.yy",},},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
+    {"id":{"name":"spr_godsend_anim","path":"sprites/spr_godsend_anim/spr_godsend_anim.yy",},},
     {"id":{"name":"spr_rock_skin","path":"sprites/spr_rock_skin/spr_rock_skin.yy",},},
     {"id":{"name":"spr_battlepass_sidebox2","path":"sprites/spr_battlepass_sidebox2/spr_battlepass_sidebox2.yy",},},
     {"id":{"name":"spr_mountaingrass","path":"sprites/spr_mountaingrass/spr_mountaingrass.yy",},},
