@@ -3,17 +3,23 @@
 
 switch room
 	{
+		
 	case TheHill:
 		{
-			
 		//You have levelled up, you know what that means! That's right!!
 		//Show the player their brand new unlock!
 		//(Price is Right theme starts playing)
 		if show_new_unlock
 			{
-			draw_text(750, 200, "Level Up!")
-			draw_text(750, 250, "New Unlock!")
-			draw_sprite_ext(rewardlist[global.battle_level][1], 0, 800, 100, 3, 3, 0, c_white, 1);
+			draw_set_font(fnt_menularge);
+			draw_set_halign(fa_center);
+			draw_set_valign(fa_center);
+			draw_set_color(c_black);
+			
+			draw_text(683, 250, "You unlocked a new skin!")
+			
+			draw_sprite(spr_skins_box, 0, 683, 100);
+			draw_sprite_ext(rewardlist[global.battle_level][1], 0, 683, 100, 3, 3, 0, c_white, 1);
 			};
 			
 		break;

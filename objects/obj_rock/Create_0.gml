@@ -10,6 +10,8 @@ global.falling_movement_rate = -12;
 
 do_animation = global.do_rock_anim;
 sprite_index = global.equipped_rock;
+image_angle = 18.43 * global.do_rock_rotation;
+
 image_speed = 0;
 
 // Dust VFX activation

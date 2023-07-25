@@ -3,5 +3,7 @@
 layer_id = layer_get_id("Background")
 background_id = layer_background_get_id(layer_id);
 
+tree_layer_id = layer_get_id("Trees");
+
 //Randomize the background clouds' movement rate.
 layer_hspeed(layer_id, random_range(-.5, .5));

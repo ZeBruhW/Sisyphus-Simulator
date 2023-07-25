@@ -13,10 +13,10 @@ switch obj_keycontrol.gamestate
 				{
 				image_speed = .33;
 				}
-			//else
-				//{
+			else
+				{
 				image_angle -= .125;
-				//}
+				}
 			};
 		else
 			{
@@ -51,7 +51,12 @@ switch obj_keycontrol.gamestate
 				image_angle += 10;
 				}
 	
-		if x > (0 - (sprite_width / 2))
+		if global.do_rock_rotation
+			{
+			image_angle = 0; //Just setting rotation back to normal when it's sliding down.
+			}
+	
+		if x > (0 - (sprite_width / 1.5))
 			{
 			hspeed = -15;
 			}

@@ -9,7 +9,7 @@ if (do_unlock == true) and (global.battle_level <= rewardcap) and (rewardlist[gl
 	rewardlist[global.battle_level][0] = true;
 	
 	show_new_unlock = true;
-	alarm[0] = 60;
+	alarm[0] = 120;
 	
 	do_unlock = false;
 	}

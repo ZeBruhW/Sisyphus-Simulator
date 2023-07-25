@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-final_x = x + 864;
+final_x = x;
 final_y = 464;
 
 ending_initial_x = 0;

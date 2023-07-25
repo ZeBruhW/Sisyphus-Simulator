@@ -24,6 +24,7 @@ if (keyboard_check_direct(vk_enter) and rock_selected[0])
 	//Only do this if you've got the rock unlocked.
 	global.equipped_rock = rock_selected[1]; //Pass it the sprite babyy.
 	global.do_rock_anim = rock_selected[4]; //Storing whether or not the sprite was hand-animated.
+	global.do_rock_rotation = rock_selected[5];
 	new_equip_feedback = new_equip_feedback_max;
 	};
 	
@@ -34,7 +35,7 @@ if scroll_lockout != 0
 	};
 
 //Count down the timer to tell you you have a new thing equipped.
-if new_equip_feedback != 0
+if new_equip_feedback > 0
 	{
 	new_equip_feedback -= 1;
 	};

@@ -25,16 +25,8 @@ for (var i = 0; i < array_length(rock_selected[3]); i++)
 	draw_text(883, 296 + (i * 48), rock_selected[3][i]);
 	}
 
-/*
-//Drawing the currently equipped rock.
-draw_sprite_ext(global.equipped_rock, 0, 1000, 200, 3, 3, 0, c_white, 1);
 
-if new_equip_feedback == 0
+if new_equip_feedback > 0
 	{
-	draw_text(900, 300, "Currently Equipped");
+	draw_text(883, 550, "Equipped!");
 	}
-else
-	{
-	draw_text(900, 300, "Equipped!");
-	}
-*/
