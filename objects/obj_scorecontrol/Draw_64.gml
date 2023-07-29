@@ -14,7 +14,7 @@ switch room
 			draw_set_color(c_black);
 			
 			//Center is 683 x, 384 y.
-			//draw_text(0, 200, "XP Tally: " + string(xp_tally)); //Debug item. Delete as needed.
+			//draw_text(0, 200, "Alarm[0]: " + string(xp_tally_rate + (10 ^ (1 - (xp_untallied / global.newly_earned_xp))))); //Debug item. Delete as needed.
 			draw_sprite(spr_score_display, 0, 683, 384);
 			
 			draw_text(683, 284, "Score: " + string(xp_untallied));

@@ -4,8 +4,8 @@
 depth = (y * -1);
 
 //Setting player movespeed stuff.
-global.pushing_movement_rate = .25;
-global.falling_movement_rate = -12;
+global.pushing_movement_rate = .333;
+global.falling_movement_rate = -16;
 
 
 do_animation = global.do_rock_anim;

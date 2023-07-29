@@ -12,6 +12,8 @@ if room == TheHill
 	
 	if obj_keycontrol.gamestate == 5
 		{
+		did_level_up = false;
+			
 		if xp_tally != global.newly_earned_xp
 			{
 			global.battle_xp += 1;
@@ -19,7 +21,7 @@ if room == TheHill
 			xp_tally += 1;
 			xp_untallied -= 1;
 		
-			alarm[0] = xp_tally_rate + (5 * (global.battle_xp / next_xp_threshold));
+			alarm[0] = xp_tally_rate + (3 * (xp_tally / global.newly_earned_xp));
 			};
 		else
 			{
