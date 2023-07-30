@@ -138,6 +138,7 @@
     {"id":{"name":"obj_hilltop","path":"objects/obj_hilltop/obj_hilltop.yy",},},
     {"id":{"name":"spr_skins_box","path":"sprites/spr_skins_box/spr_skins_box.yy",},},
     {"id":{"name":"spr_hilltop","path":"sprites/spr_hilltop/spr_hilltop.yy",},},
+    {"id":{"name":"spr_Confetti","path":"sprites/spr_Confetti/spr_Confetti.yy",},},
     {"id":{"name":"spr_score_display","path":"sprites/spr_score_display/spr_score_display.yy",},},
     {"id":{"name":"rm_battlepass","path":"rooms/rm_battlepass/rm_battlepass.yy",},},
     {"id":{"name":"spr_rock_blue","path":"sprites/spr_rock_blue/spr_rock_blue.yy",},},

@@ -35,6 +35,8 @@ if room == TheHill
 		if global.battle_xp == next_xp_threshold
 			{
 			level_up();
+			part_particles_create(obj_Particle_setup.particle_System, x+380, y+380, obj_Particle_setup.particle_Confetti, 100 );
+			part_particles_create(obj_Particle_setup.particle_System, x+980, y+380, obj_Particle_setup.particle_Confetti, 100 );
 			};
 		};
 	else
@@ -42,6 +44,5 @@ if room == TheHill
 		alarm[0] = xp_tally_rate;
 		};
 	};
-
 
 //Check if level up happened.

@@ -31,3 +31,15 @@ part_type_life(particle_Sweat, 60, 120);
 part_type_orientation(particle_Sweat, 0, 359, 0.1, 1, 0);
 
 part_type_alpha3(particle_Sweat, 0.1, 0.2, 0.01);
+
+// Confetti VFX
+
+particle_Confetti = part_type_create();
+	part_type_sprite(particle_Confetti, spr_Confetti, 0, 0, 1);
+	part_type_size(particle_Confetti, 1, 10, 0.001, 0);
+	part_type_direction(particle_Confetti, 0, 359, 1, 1);
+	part_type_speed(particle_Confetti,  3, 6, 0, 0);
+	part_type_life(particle_Confetti, 60, 120);
+	part_type_orientation(particle_Confetti, 0, 359, 0.1, 1, 0);
+	part_type_alpha3(particle_Confetti, 0.1, 0.2, 0.01);
+	part_type_gravity(particle_Confetti, 0, 0.1);
