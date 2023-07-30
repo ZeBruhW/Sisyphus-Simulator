@@ -117,10 +117,10 @@ rockunlocks[11][5] = false;
 //That'll unlock it fine, if I did my math right.
 //If you don't want a reward that tier, set it to 0.
 
-rewardlist[1] = rockunlocks[3];
+rewardlist[1] = rockunlocks[1];
 rewardlist[2] = 0
-rewardlist[3] = rockunlocks[1];
-rewardlist[4] = rockunlocks[2];
+rewardlist[3] = rockunlocks[2];
+rewardlist[4] = rockunlocks[3];
 rewardlist[6] = 0;
 rewardlist[7] = rockunlocks[4];
 rewardlist[8] = 0;

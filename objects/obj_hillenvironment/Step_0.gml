@@ -30,6 +30,9 @@ switch obj_keycontrol.gamestate
 			{
 			x = -240
 			y = 848
+			
+			depth = obj_hillbottom.depth + 1;
+			
 			randomize_sprite();	
 			};
 		break; //Case 3 break.

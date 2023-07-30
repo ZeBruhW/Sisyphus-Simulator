@@ -31,7 +31,6 @@ function move_object(movespeed)
 function randomize_sprite()
 	{
 	//closeness = (y / room_height); //This is to fake parallax scrolling.
-	depth = y * -1;
 	
 	var sprite_slot = irandom(array_length(potential_sprites) - 1);
 	
